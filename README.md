@@ -165,6 +165,82 @@ for (int i = 0; i < prices.Length; i++) {
 double average = sum / prices.Length;
 Console.WriteLine($"Average: {average}");   // Output: Average: 3.99
 ```
+
+# Methods
+In C#, a method is a block of code that performs a specific task. Methods can be declared inside a class, and they can have parameters, return values, and access modifiers.
+
+```
+access-modifier return-type method-name(parameter-list) {
+    // code to execute
+    return value;
+}
+```
+* Access modifier: This determines the visibility of the method. The most common access modifiers are public and private.
+* Return type: This specifies the type of the value that the method returns. If the method does not return a value, the return type is void.
+* Method name: This is the name of the method, which is used to call it from other parts of the program.
+* Parameter list: This is a list of zero or more parameters that the method accepts. Each parameter has a type and a name.
+* Return statement: This specifies the value that the method returns, if any.
+
+## Examples
+### Example 1: Method without Parameters or Return Value
+```
+public void SayHello() {
+    Console.WriteLine("Hello, world!");
+}
+```
+This method takes no parameters and does not return a value. It simply prints "Hello, world!" to the console.
+
+### Example 2: Method with Parameters
+```
+public int Add(int x, int y) {
+    int result = x + y;
+    return result;
+}
+```
+This method takes two parameters of type int, adds them together, and returns the result.
+
+### Example 3: Method with Multiple Return Statements
+```
+public string GetGrade(int score) {
+    if (score >= 90) {
+        return "A";
+    }
+    else if (score >= 80) {
+        return "B";
+    }
+    else if (score >= 70) {
+        return "C";
+    }
+    else {
+        return "F";
+    }
+}
+```
+This method takes a score as a parameter and returns a letter grade based on the score.
+
+### Example 4: Method with Default Parameter Value
+```
+public void SayHello(string name = "world") {
+    Console.WriteLine($"Hello, {name}!");
+}
+```
+This method takes a parameter name of type string, with a default value of "world". If no value is passed for name, it will use the default value and print "Hello, world!" to the console.
+
+## Method Overloading
+Method overloading is the practice of defining two or more methods with the same name but different parameter lists. When a method is called, the compiler determines which method to call based on the number and types of the arguments.
+```
+public int Add(int x, int y) {
+    int result = x + y;
+    return result;
+}
+
+public double Add(double x, double y) {
+    double result = x + y;
+    return result;
+}
+```
+In this example, there are two Add methods: one that takes two int parameters and returns an int, and one that takes two double parameters and returns a double. When the Add method is called, the compiler will choose the appropriate version of the method based on the types of the arguments.
+
 # Object-Oriented Programming:
 ## Classes
 * Class is a blueprint for creating objects.

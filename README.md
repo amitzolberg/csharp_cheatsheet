@@ -111,3 +111,53 @@ int a = 10;
 int b = 3;
 int c = a / b;      // integer
 ```
+# For Loops
+C# for loops are used to execute a block of code repeatedly. They are particularly useful when you know the number of times you want to execute a block of code.
+
+## Syntax
+```
+for (initializer; condition; iterator) {
+    // code to execute
+}
+```
+* Initializer: This is an expression that is executed once before the loop starts. It is used to initialize the loop control variable.
+* Condition: This is an expression that is checked before each iteration of the loop. If the condition is true, the loop continues; otherwise, it ends.
+* Iterator: This is an expression that is executed after each iteration of the loop. It is used to update the loop control variable.
+## Examples
+### Example 1: Counting from 0 to 9
+```
+for (int i = 0; i < 10; i++) {
+    Console.WriteLine(i);
+}
+```
+This code will count from 0 to 9 and print each number on a new line.
+
+### Example 2: Summing up the numbers from 1 to 100
+```
+int sum = 0;
+for (int i = 1; i <= 100; i++) {
+    sum += i;
+}
+Console.WriteLine(sum);
+```
+This code will sum up the numbers from 1 to 100 and print the result to the console.
+
+### Example 3: Looping through an array
+```
+int[] numbers = { 1, 2, 3, 4, 5 };
+for (int i = 0; i < numbers.Length; i++) {
+    Console.WriteLine(numbers[i]);
+}
+```
+This code will loop through the numbers array and print each element to the console.
+
+### Example 4: Nested for loops
+```
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        Console.WriteLine($"{i},{j}");
+    }
+}
+```
+This code will print all the combinations of the numbers 0, 1, and 2.
+

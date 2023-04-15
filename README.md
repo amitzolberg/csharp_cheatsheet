@@ -9,15 +9,13 @@
 * String can be formatted using the String.Format method or the $"..." syntax.
 ## Example:
 ```
-csharp
-Copy code
 string s1 = "Hello";
 string s2 = new string(new char[] { 'W', 'o', 'r', 'l', 'd' });
 string s3 = s1 + " " + s2;
 Console.WriteLine(s3);    // Output: Hello World
-Object-Oriented Programming:
 ```
-# Classes
+# Object-Oriented Programming:
+## Classes
 * Class is a blueprint for creating objects.
 * Class can have attributes (fields) and operations (methods).
 * Class can have a constructor that initializes its attributes.
@@ -27,10 +25,8 @@ Object-Oriented Programming:
 * ToString method is used to convert an object to a string representation.
 * Object is created using the "new" keyword followed by the class name.
 * Object's operations can be called using the dot notation.
-## Example:
+### Example:
 ```
-csharp
-Copy code
 public class Person {
     private string name;
     private int age;
